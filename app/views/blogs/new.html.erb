@@ -1,8 +1,8 @@
 <div class = "contents row">
-  <%= form_for('/blogs', method: :post) do %>
+  <%= form_for (@blog) do |f| %>
   <h1>投稿する</h1>
-  <input placeholder="nickname" type="text" name="name">
-  <textarea cols = "30" name="text" placeholder="text" rows="10"></textarea>
-  <input type="submit" value="sent">
+ <!--  <%= f.label :日時 %> -->
+  <%= f.text_area :text %><br>
+  <%= f.submit %>
   <% end %>
 </div>
