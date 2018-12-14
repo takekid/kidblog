@@ -1,5 +1,5 @@
 <div class="contents row">
-  <%= form_for blogs_path do |f| %>
+  <%= form_for @blog do |f| %>
   <h3>編集する</h3>
   <%= f.text_area :text %><br>
   <%= f.submit %>
